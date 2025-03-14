@@ -14,7 +14,7 @@ pipeline {
                     sh 'git config --global user.email "jenkins@jkops.com"'
                     sh 'git config --global user.name "Jenkins"'
                     
-                    git branch: 'master', url: 'https://github.com/cyse7125-sp25-team02/healthz-database-migration', credentialsId: 'github-credentials'
+                    git branch: 'main', url: 'https://github.com/cyse7125-sp25-team02/healthz-database-migration', credentialsId: 'github-credentials'
                     env.NEXT_VERSION = nextVersion()
                 }
             }
